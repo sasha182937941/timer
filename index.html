@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game">
+        <h1 class="game-title">Реакція</h1>
+        <div class="stats">
+            <p>Влучання: <span id="score">0</span></p>
+            <p>Промахи: <span id="misses">0</span></p>
+            <p>Час: <span id="time">20</span> с</p>
+            <p>Реакція: <span id="reaction">—</span></p>
+        </div>
+        <div class="field" id="field">
+            <button class="target hidden" id="target" aria-label="Ціль"></button>
+            <div class="overlay" id="overlay">
+                <p class="overlay-text" id="overlayText">Клікай по цілі якомога швидше. У тебе 20 секунд.</p>
+                <button class="start-btn" id="startBtn">Старт</button>
+            </div>
+        </div>
+        <p class="best">Рекорд: <span id="best">0</span></p>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
